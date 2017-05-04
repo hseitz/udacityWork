@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">RugbyFans</string>
+    <string name="description">RugbyFans is a meetup group for fans of international Sevens Rugby. We meet whenever there\'s a tournament for debauchery and good times.</string>
+    <string name="contactUs">For more info, contact:</string>
+    <string name="contactInfo">Harrison Seitz\n(214) 748-3647\n666 Funtimes Avenue\nSan Francisco, CA</string>
+    <string name="nextTournamentInfo">For info on the next 7s tournament, please click the button below: </string>
+    <string name="buttonText">Click Here</string>
+</resources>

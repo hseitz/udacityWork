@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/sevens_header"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            style="@style/welcomeText"
+            android:padding="16dp"
+            android:text="@string/welcome" />
+
+        <TextView
+            android:id="@+id/highScore"
+            style="@style/welcomeText"
+            android:text="@string/defaultHighScore"
+            android:textAllCaps="true"
+            android:textColor="@color/colorAccent" />
+
+        <View style="@style/divider" />
+
+        <TextView
+            style="@style/questionHeaders"
+            android:text="@string/questionOne" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@drawable/question1"
+            android:paddingBottom="16dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            style="@style/questionText"
+            android:text="@string/questionOneText" />
+
+        <EditText
+            android:id="@+id/q1answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/questionAnswer" />
+
+        <View style="@style/divider" />
+
+        <TextView
+            style="@style/questionHeaders"
+            android:text="@string/questionTwo" />
+
+        <TextView
+            style="@style/questionText"
+            android:text="@string/questionTwoText" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/q2a1"
+                style="@style/answerRadioButtons"
+                android:text="@string/questionTwoAnswerOne" />
+
+            <RadioButton
+                android:id="@+id/q2a2"
+                style="@style/answerRadioButtons"
+                android:text="@string/questionTwoAnswerTwo" />
+
+            <RadioButton
+                android:id="@+id/q2a3"
+                style="@style/answerRadioButtons"
+                android:text="@string/questionTwoAnswerThree" />
+        </RadioGroup>
+
+        <View style="@style/divider" />
+
+        <TextView
+            style="@style/questionHeaders"
+            android:text="@string/questionThree" />
+
+        <TextView
+            style="@style/questionText"
+            android:text="@string/questionThreeText" />
+
+        <CheckBox
+            android:id="@+id/usCheckBox"
+            style="@style/checkBox"
+            android:text="@string/usa" />
+
+        <CheckBox
+            android:id="@+id/caCheckBox"
+            style="@style/checkBox"
+            android:text="@string/canada" />
+
+        <CheckBox
+            android:id="@+id/ausCheckBox"
+            style="@style/checkBox"
+            android:text="@string/australia" />
+
+        <CheckBox
+            android:id="@+id/nlCheckBox"
+            style="@style/checkBox"
+            android:text="@string/netherlands" />
+
+        <CheckBox
+            android:id="@+id/engCheckBox"
+            style="@style/checkBox"
+            android:text="@string/england" />
+
+        <CheckBox
+            android:id="@+id/nzCheckBox"
+            style="@style/checkBox"
+            android:text="@string/new_zealand" />
+
+        <View style="@style/divider" />
+
+        <TextView
+            style="@style/questionHeaders"
+            android:text="@string/questionFour" />
+
+        <TextView
+            style="@style/questionText"
+            android:text="@string/questionFourText" />
+
+        <EditText
+            android:id="@+id/q4Answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/questionAnswer" />
+
+        <View style="@style/divider" />
+
+        <TextView
+            style="@style/questionHeaders"
+            android:text="@string/questionFive" />
+
+        <TextView
+            style="@style/questionText"
+            android:text="@string/questionFiveText" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/q5a1"
+                style="@style/answerRadioButtons"
+                android:text="@string/questionFiveAnswerOne" />
+
+            <RadioButton
+                android:id="@+id/q5a2"
+                style="@style/answerRadioButtons"
+                android:text="@string/questionFiveAnswerTwo" />
+
+            <RadioButton
+                android:id="@+id/q5a3"
+                style="@style/answerRadioButtons"
+                android:text="@string/questionFiveAnswerThree" />
+        </RadioGroup>
+
+        <View style="@style/divider" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:background="@color/colorPrimary"
+            android:onClick="finishQuiz"
+            android:text="@string/buttonSubmit"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</ScrollView>
+

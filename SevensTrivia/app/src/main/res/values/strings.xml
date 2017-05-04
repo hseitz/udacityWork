@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">SevensTrivia</string>
+    <string name="welcome">Welcome to SevensTrivia!\nYou\'ll be asked 5 different questions to test your knowledge of the game.\n\nScroll down to begin!\n</string>
+    <string name="defaultHighScore">High Score: </string>
+    <string name="questionOne">Question 1</string>
+    <string name="questionOneText">Who is this player on New Zealand\'s 7s squad?</string>
+    <string name="questionAnswer">Enter Answer Here</string>
+    <string name="questionTwo">Question 2</string>
+    <string name="questionTwoText">Who is the all-time top try scorer in the HSBC Women\'s Sevens Series?</string>
+    <string name="questionTwoAnswerOne">Emilee Cherry</string>
+    <string name="questionTwoAnswerTwo">Ghislaine Landry</string>
+    <string name="questionTwoAnswerThree">Portia Woodman</string>
+    <string name="questionThree">Question 3</string>
+    <string name="questionThreeText">Which of the original six core teams in the HSBC Women\'s Sevens Series have won the championship?</string>
+    <string name="new_zealand">New Zealand</string>
+    <string name="australia">Australia</string>
+    <string name="usa">United States</string>
+    <string name="canada">Canada</string>
+    <string name="netherlands">Netherlands</string>
+    <string name="england">England</string>
+    <string name="questionFour">Question 4</string>
+    <string name="questionFourText">Which current player has a father, uncle, and aunt that have formerly played rugby for their national teams?</string>
+    <string name="questionFive">Question 5</string>
+    <string name="questionFiveText">What was the first year of the HSBC Women\'s Sevens Series?</string>
+    <string name="questionFiveAnswerOne">1999</string>
+    <string name="questionFiveAnswerTwo">2012</string>
+    <string name="questionFiveAnswerThree">1985</string>
+    <string name="buttonSubmit">Submit Answers</string>
+</resources>

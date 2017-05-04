@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.harrison.rugbyfans.MainActivity"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent" >
+
+    <RelativeLayout
+     android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/alev"
+            android:id="@+id/alev" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RugbyFans"
+            android:layout_alignLeft="@id/alev"
+            android:layout_alignBottom="@id/alev"
+            android:textSize="32sp"
+            android:padding="16dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white" />
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/description"
+            android:layout_below="@id/alev"
+            android:padding="16dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+
+            />
+
+        <TextView
+            android:id="@+id/contactUs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="40dp"
+            android:layout_below="@id/description"
+            android:text="@string/contactUs"
+            />
+        <TextView
+            android:id="@+id/contactInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:paddingLeft="56dp"
+            android:layout_below="@id/contactUs"
+            android:text="@string/contactInfo"
+            />
+        <TextView
+            android:id="@+id/nextTournamentInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="16dp"
+            android:layout_below="@id/contactInfo"
+            android:text="@string/nextTournamentInfo"
+            />
+        <Button
+            android:id="@+id/nextTournamentUrl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="16dp"
+            android:layout_below="@id/nextTournamentInfo"
+            android:text="@string/buttonText"
+            />
+    </RelativeLayout>
+</ScrollView>
