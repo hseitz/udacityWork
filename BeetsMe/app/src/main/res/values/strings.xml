@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">BeetsMe</string>
+    <string name="now_playing_description">This is where we would put the information for the
+        currently playing track, such as:\n
+        Track Name - Artist Name - Album Name\n
+        And then an array of buttons for playback control. From this screen, we should be able to
+        utilize the Android MediaPlayer class to play music files from the device\'s storage or
+        streams over the network. MediaPlayer will help us to handle a lot of the overhead of
+        playing media files
+    </string>
+    <string name="library_button">Library</string>
+    <string name="live_button">Live</string>
+    <string name="explore_button">Explore</string>
+    <string name="library_label">Library</string>
+    <string name="explore_label">Explore</string>
+    <string name="live_label">Live</string>
+    <string name="main_button">Now Playing</string>
+    <string name="library_description">This is where we would display the music available to be
+        played by the app.\n
+        Sorting could be done by categories such as Artist, Album, Song Title, Genre.\n
+        If media is stored in an external storage location, we might need to ask for the permission
+        READ_EXTERNAL_STORAGE.\n
+        Search could also be available for local or cloud-hosted resources. The latter would require
+        us to implement network calls to retrieve that data, probably using an AsyncTask so that
+        we can do things like display a progress icon so users know that we\'re in the process of
+        finding and returning results.
+    </string>
+    <string name="explore_description">Users navigating to this page would see dynamic
+        recommendations for similar music based on whatever\'s currently playing. We could do this
+        somewhat easily by connecting with music catalog/rating services such as last.fm, allmusic,
+        rateyourmusic, etc. I would suggest to keep this lightweight, these queries should require
+        users to manually kick them off (i.e. don\'t run unnecessarily in the background when users
+        might not want to view recommendations, or even run after they just navigate to the page).
+        Executing these queries should be done using AsyncTasks to allow us to display progress and
+        update users depending on the results.
+    </string>
+    <string name="live_description">Navigating to this screen would provide users with upcoming
+        live concerts for the artist that is currently playing, or artists that are similar if
+        there are no upcoming shows for that artist. In order to accomplish this, we\'d need to ask
+        users for location permission (should be sufficient to use ACCESS_COARSE_LOCATION for this).
+        With location/currently playing data, we should be able to use APIs like JamBase, Songkick,
+        Bandsintown, etc. depending on what\'s most useful/cost-efficient per API call ;)
+    </string>
+</resources>

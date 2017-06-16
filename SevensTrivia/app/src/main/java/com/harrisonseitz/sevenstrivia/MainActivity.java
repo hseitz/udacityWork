@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
         // grab the EditText for q1
         EditText q1Answer = (EditText) findViewById(R.id.q1answer);
         // is Question 1 correct?
-        if (q1Answer.getText().toString().equals("Portia Woodman")) {
+        if (q1Answer.getText().toString().equalsIgnoreCase("Portia Woodman")) {
             currentScore += 1;
         }
         // grab the radiobutton for q2's answer
@@ -76,14 +76,19 @@ public class MainActivity extends AppCompatActivity {
         // grab the checkboxes for q3's answer
         CheckBox q3AnswerNZ = (CheckBox) findViewById(R.id.nzCheckBox);
         CheckBox q3AnswerAU = (CheckBox) findViewById(R.id.ausCheckBox);
+        CheckBox q3AnswerUS = (CheckBox) findViewById(R.id.usCheckBox);
+        CheckBox q3AnswerENG = (CheckBox) findViewById(R.id.engCheckBox);
+        CheckBox q3AnswerCA = (CheckBox) findViewById(R.id.caCheckBox);
+        CheckBox q3AnswerNL = (CheckBox) findViewById(R.id.nlCheckBox);
         // is Question 3 correct?
-        if (q3AnswerNZ.isChecked() && q3AnswerAU.isChecked()) {
+        if (q3AnswerNZ.isChecked() && q3AnswerAU.isChecked() && !q3AnswerUS.isChecked() &&
+                !q3AnswerENG.isChecked() && !q3AnswerCA.isChecked() && !q3AnswerNL.isChecked()) {
             currentScore += 1;
         }
         // grab the EditText for q4
         EditText q4Answer = (EditText) findViewById(R.id.q4Answer);
         // is Question 4 correct?
-        if (q4Answer.getText().toString().equals("Portia Woodman")) {
+        if (q4Answer.getText().toString().equalsIgnoreCase("Portia Woodman")) {
             currentScore += 1;
         }
         // grab the radiobutton for q5's answer

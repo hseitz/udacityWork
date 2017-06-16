@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.harrisonseitz.guide2seattle.MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/image_default_height"
+            android:src="@drawable/placeholder"
+            android:scaleType="centerCrop"
+            android:id="@+id/splashImage"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guide2Seattle"
+            android:textSize="36sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:paddingLeft="32dp"
+            android:layout_alignBottom="@id/splashImage"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/splashImage"
+            android:orientation="vertical">
+            <FrameLayout
+                android:id="@+id/landmarks_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/splashImage">
+                <TextView
+                    android:id="@+id/landmarks"
+                    style="@style/CategoryStyle"
+                    android:text="@string/category_landmarks"/>
+            </FrameLayout>
+            <View style="@style/DividerStyle" />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/dining"
+                    style="@style/CategoryStyle"
+                    android:text="@string/category_dining" />
+            </FrameLayout>
+            <View style="@style/DividerStyle" />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/activities"
+                    style="@style/CategoryStyle"
+                    android:text="@string/category_activities" />
+            </FrameLayout>
+            <View style="@style/DividerStyle" />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/outdoors"
+                    style="@style/CategoryStyle"
+                    android:text="@string/category_outdoors" />
+            </FrameLayout>
+            <View style="@style/DividerStyle"/>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

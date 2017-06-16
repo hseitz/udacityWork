@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/pageDesc"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:text="@string/live_description" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <Button
+            android:id="@+id/nowPlayingButton"
+            style="@style/navButton"
+            android:text="@string/main_button" />
+
+        <Button
+            android:id="@+id/exploreButton"
+            style="@style/navButton"
+            android:text="@string/explore_button" />
+
+        <Button
+            android:id="@+id/libraryButton"
+            style="@style/navButton"
+            android:text="@string/library_button" />
+
+    </LinearLayout>
+</LinearLayout>

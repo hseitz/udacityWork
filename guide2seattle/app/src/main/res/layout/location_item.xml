@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+    <ImageView
+        android:layout_height="@dimen/image_default_height"
+        android:id="@+id/location_image"
+        android:layout_width="match_parent"
+        android:background="@android:color/white"
+        android:scaleType="centerCrop"/>
+    <LinearLayout
+        android:paddingTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white">
+        <TextView
+            style="@style/LocationItemHeader"
+            android:id="@+id/location_name"
+            android:textSize="24sp"/>
+        <TextView
+            style="@style/LocationItem"
+            android:id="@+id/location_description" />
+        <TextView
+            style="@style/LocationItemHeader"
+            android:text="@string/location_address_header"/>
+        <TextView
+            style="@style/LocationItem"
+            android:id="@+id/location_address" />
+        <TextView
+            style="@style/LocationItemHeader"
+            android:text="@string/location_open_header"/>
+        <TextView
+            style="@style/LocationItem"
+            android:id="@+id/location_hours" />
+        <TextView
+            style="@style/LocationButton"
+            android:id="@+id/reserve_button"
+            android:background="@color/colorAccent"
+            android:text="@string/reserve_button"/>
+        <TextView
+            style="@style/LocationButton"
+            android:id="@+id/directions_button"
+            android:background="@color/colorPrimary"
+            android:text="@string/directions_button"/>
+    </LinearLayout>
+</LinearLayout>
