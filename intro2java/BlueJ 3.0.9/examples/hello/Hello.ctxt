@@ -1,8 +1,0 @@
-#BlueJ class context
-comment0.params=
-comment0.target=void\ go()
-comment0.text=\n\ Method\ that\ does\ the\ work\ \n
-comment1.params=args
-comment1.target=void\ main(java.lang.String[])
-comment1.text=\n\ \ main\ method\ for\ testing\ outside\ BlueJ\ \n
-numComments=2
