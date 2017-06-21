@@ -40,8 +40,7 @@ public class ActivitiesActivity extends AppCompatActivity {
                 R.drawable.psc,
                 getString(R.string.loc_hours_psc),
                 getString(R.string.loc_addr_psc),
-                getString(R.string.loc_res_psc)
-        ));
+                getString(R.string.loc_res_psc)));
         // Museum of Flight
         locations.add(new Location(getString(R.string.loc_name_mof),
                 getString(R.string.loc_desc_mof),
