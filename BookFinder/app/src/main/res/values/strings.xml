@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BookFinder</string>
+    <string name="search_bar_empty">Enter query terms here</string>
+    <string name="search_button">GO</string>
+    <string name="empty_search_view">Please enter a search term above.</string>
+    <string name="book_header_title">Title:</string>
+    <string name="book_header_author">Author(s):</string>
+    <string name="book_header_desc">Description:</string>
+    <string name="no_connection">No internet connection.</string>
+    <string name="no_books">No books found.</string>
+</resources>
