@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">NewsAlert</string>
+    <string name="search_box_hint">Enter a search term</string>
+    <string name="story_title">Story Title</string>
+    <string name="story_description">Story description goes here lorem ipsum</string>
+    <string name="story_section_default">Published in section:</string>
+    <string name="no_connection">No internet connectivity.</string>
+    <string name="no_returned_stories">No stories returned</string>
+    <string name="search_hint">Click here to enter a search term</string>
 </resources>
