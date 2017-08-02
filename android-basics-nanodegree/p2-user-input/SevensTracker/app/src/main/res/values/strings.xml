@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Sevens Tracker</string>
+    <string name="teamAName">Team A</string>
+    <string name="teamBName">Team B</string>
+    <string name="initScore">0</string>
+    <string name="reset">Reset</string>
+    <string name="scoreTry">Try</string>
+    <string name="scoreConversion">Conversion</string>
+    <string name="scoreDropGoal">Drop Goal</string>
+</resources>
