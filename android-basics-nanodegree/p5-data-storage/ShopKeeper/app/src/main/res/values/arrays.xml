@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="product_icons">
+        <item>Individual Item</item>
+        <item>Bundle</item>
+        <item>Promo Item</item>
+    </string-array>
+</resources>

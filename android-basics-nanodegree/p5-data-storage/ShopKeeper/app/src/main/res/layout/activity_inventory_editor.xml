@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="8dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:text="@string/editor_field_name"
+                style="@style/CategoryStyle"/>
+            <TextView
+                android:text="@string/editor_field_quantity"
+                style="@style/CategoryStyle"/>
+            <TextView
+                android:text="@string/editor_field_price"
+                style="@style/CategoryStyle"/>
+            <TextView
+                android:text="@string/editor_field_contact"
+                style="@style/CategoryStyle" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:orientation="vertical">
+            <!-- Product Name -->
+            <EditText
+                android:id="@+id/edit_product_name"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:hint= "@string/editor_product_name"/>
+
+            <!-- Quantity -->
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+            <EditText
+                android:id="@+id/edit_quantity"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                android:hint="@string/editor_initial_quantity"/>
+            <TextView
+                android:id="@+id/editor_decrement_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/decrement_button"
+                style="@style/EditorButton"
+                android:layout_marginEnd="8dp"/>
+            <TextView
+                android:id="@+id/editor_increment_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/EditorButton"
+                android:layout_marginEnd="8dp"
+                android:text="@string/increment_button"/>
+            </LinearLayout>
+
+            <!-- List Price -->
+            <EditText
+                android:id="@+id/edit_list_price"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:inputType="number"
+                android:hint="@string/editor_list_price"/>
+
+            <!-- Supplier contact Info -->
+            <EditText
+                android:id="@+id/edit_supplier_email"
+                android:inputType="textEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:hint="@string/editor_supplier_contact"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/EditorButton"
+        android:background="@color/colorAccent"
+        android:id="@+id/add_image_button"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:textAlignment="center"
+        android:text="@string/editor_add_image_button"/>
+
+    <ImageView
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="144dp"
+        android:src="@drawable/ic_insert_photo_black_48dp"
+        android:id="@+id/image_container" />
+
+    <TextView
+        android:layout_marginTop="4dp"
+        style="@style/EditorButton"
+        android:id="@+id/open_po_button"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:textAlignment="center"
+        android:text="@string/open_purchase_order"/>
+</LinearLayout>

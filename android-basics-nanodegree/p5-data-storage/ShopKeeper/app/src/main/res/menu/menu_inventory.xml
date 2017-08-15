@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.harrisonseitz.shopkeeper.InventoryActivity">
+    <item
+        android:id="@+id/inventory_menu_new"
+        android:orderInCategory="100"
+        android:title="@string/inventory_menu_new"
+        app:showAsAction="never"/>
+</menu>
